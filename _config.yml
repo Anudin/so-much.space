@@ -23,6 +23,7 @@ exclude:
   - Gemfile.lock
   - LICENSE.md
   - README.md
+  - assets-raw/
 
 sass:
   sass_dir: _sass
