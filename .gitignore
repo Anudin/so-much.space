@@ -41,5 +41,3 @@ validation-report.json
 
 # Folders to ignore
 node_modules
-
-gh_pages/
