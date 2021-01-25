@@ -24,6 +24,7 @@ exclude:
   - LICENSE.md
   - README.md
   - assets-raw/
+  - gh_pages/
 
 sass:
   sass_dir: _sass
