@@ -21,6 +21,7 @@ body {
 a {
   color: var(--link-color);
   text-decoration: none;
+  white-space: nowrap;
 
   // `:focus` is linked to `:hover` for basic accessibility
   &:hover,
