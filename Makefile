@@ -48,6 +48,7 @@ build: Gemfile.lock | $(BUILD_DIR) prepare-build-dir
 > rsync -a $(BUILD_DIR)/.tmp/ $(BUILD_DIR)
 > rm -r $(BUILD_DIR)/.tmp
 
+# TODO Use minify
 .PHONY: deploy
 deploy: | build
 # See https://stackoverflow.com/questions/5694389/get-the-short-git-version-hash

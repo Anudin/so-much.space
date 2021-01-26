@@ -2,22 +2,23 @@
 layout: post
 title: Why Learn (Neo)Vim?
 ---
-Why bother learning a text editor that is anecdotally so hard to exit, that people just surrender and stick with it?
+Why bother learning a text editor that is anecdotally so hard to exit that unplugging your computer is easier?
 
 ---
 
-First lets get this out of the way.
-If you're one of those poor souls that can't exit Vim read `:help quit`.
+If you've ever been to [r/ProgrammerHumor](https://www.reddit.com/r/ProgrammerHumor/) you've seen the the memes.
+You heard the moaning.
+If not, a quick search on "exiting vim memes" gives you an idea.
+Lets get this out of the way: exiting Vim is not hard, it's different.
+If you're currently stuck in it try `:help quit`.
 Also there's a Disclaimer:
 
-I personally use [Neovim](https://neovim.io/).
-The points of this post should stand for Vim nevertheless, to the best of my knowledge.
-I also love it (this post is written in it). I'll try to give an unbiased view nevertheless.
+I personally use [Neovim](https://neovim.io/) but the points of this post should stand for Vim nevertheless.
+I also love using it, however I'll try to give a realistic view.
 {: .message}
 
 ## What is a Vim?
-<!-- Attribution to https://commons.wikimedia.org/wiki/File:Vimlogo.svg -->
-![Vim "The editor" Logo](/assets/vim_logo.png){: style="float: left; display: inline-block; max-width: 7rem; margin: 0 1rem 1rem 0;"}
+[![Vim logo](/assets/vim_logo.png)](#attributions){: style="float: left; display: inline-block; max-width: 7rem; margin: 0 1rem 1rem 0;"}
 Vim is a keyboard driven, insanely sophisticated text editor. It is [battle proven](https://groups.google.com/g/vim_announce/c/bQtQSHTK1sg), reliable and fun.
 
 Vim is not keyboard driven as in "I can enter text with my keyboard", although it is capable of doing that.
@@ -90,3 +91,8 @@ Begin your journey with small scale simple text editing tasks like composing an 
 If you use specialized editors regulary, start off using a plugin for those or check for integrated vim modes to ease the transition.
 Questions will arise naturally, address those and take notes.
 Use a standard text editor or switch off your Vim plugin when you get overwhelmed.
+
+## Attributions
+* Vim logo: [User:D0ktorz](https://commons.wikimedia.org/wiki/File:Vimlogo.svg), [GPL](http://www.gnu.org/licenses/gpl.html), via Wikimedia Commons
+
+---
