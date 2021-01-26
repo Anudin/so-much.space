@@ -29,7 +29,7 @@ Gemfile.lock:
 .DEFAULT_GOAL :=
 .PHONY: serve
 serve: Gemfile.lock
-> bundle exec jekyll serve --drafts
+> bundle exec jekyll serve --drafts --livereload
 
 $(BUILD_DIR):
 > git clone $(REMOTE_DEPLOY) $(BUILD_DIR)
