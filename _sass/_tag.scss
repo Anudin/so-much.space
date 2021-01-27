@@ -7,8 +7,9 @@ ul.tags {
 
 li.tag {
   border-radius: 9999rem;
-  border: 2px solid var(--body-color);
+  border: 2px solid var(--gray-600);
+  color: var(--gray-600);
   display: inline-block;
-  font-size: var(--body-font);
+  font-size: 85%;
   padding: 0.3rem 1rem;
 }
