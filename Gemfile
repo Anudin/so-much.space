@@ -7,3 +7,5 @@ gem "jekyll-seo-tag"
 
 gem "jemoji"
 gem "jekyll-sitemap"
+# TODO Should use jekyll-assets
+# TODO Could use jekyll-tagories
