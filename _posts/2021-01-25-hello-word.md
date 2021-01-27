@@ -1,4 +1,4 @@
 ---
 layout: post
 ---
-If you see this my Makefile works. Pretty neat.
+If you see this ~~my Makefile~~ the continuous deployment via Netlify works. Pretty neat.
