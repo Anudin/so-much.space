@@ -18,7 +18,7 @@ I also love using it, however I'll try to give a realistic view.
 {: .message}
 
 ## What is a Vim?
-[![Vim logo](/assets/vim_logo.png)](#attributions){: style="float: left; display: inline-block; max-width: 7rem; margin: 0 1rem 1rem 0;"}
+[![Vimlogo][vimlogo ressource link]{: style="float: left; display: inline-block; max-width: 7rem; margin: 0 1rem 1rem 0;"}][vimlogo attribution link]
 Vim is a keyboard driven, insanely sophisticated text editor. It is [battle proven](https://groups.google.com/g/vim_announce/c/bQtQSHTK1sg), reliable and fun.
 
 Vim is not keyboard driven as in "I can enter text with my keyboard", although it is capable of doing that.
@@ -92,7 +92,5 @@ If you use specialized editors regulary, start off using a plugin for those or c
 Questions will arise naturally, address those and take notes.
 Use a standard text editor or switch off your Vim plugin when you get overwhelmed.
 
-## Attributions
-* Vim logo: [User:D0ktorz](https://commons.wikimedia.org/wiki/File:Vimlogo.svg), [GPL](http://www.gnu.org/licenses/gpl.html), via Wikimedia Commons
-
----
+[vimlogo ressource link]: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/200px-Vimlogo.svg.png
+[vimlogo attribution link]: https://commons.wikimedia.org/wiki/File:Vimlogo.svg "User:D0ktorz, GPL &lt;http://www.gnu.org/licenses/gpl.html&gt;, via Wikimedia Commons"
