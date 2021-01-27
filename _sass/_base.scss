@@ -33,6 +33,14 @@ a {
   strong {
     color: inherit;
   }
+
+  .social-media-list &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
+  }
 }
 
 img:not(.emoji) {
@@ -67,7 +75,17 @@ thead th {
 }
 
 mark {
-  padding: .15rem;
   background-color: var(--yellow-100);
   border-radius: .125rem;
+  padding: .15rem;
+}
+
+.svg-icon {
+  box-sizing: unset;
+  color: black;
+  display: inline-block;
+  height: 16px;
+  padding: 5px 3px 2px 5px;
+  vertical-align: text-bottom;
+  width: 16px;
 }

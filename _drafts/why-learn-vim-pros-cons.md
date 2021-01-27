@@ -18,7 +18,7 @@ I also love using it, however I'll try to give a realistic view.
 {: .message}
 
 ## What is a Vim?
-[![Vimlogo][vimlogo ressource link]{: style="float: left; display: inline-block; max-width: 7rem; margin: 0 1rem 1rem 0;"}][vimlogo attribution link]
+[![Vimlogo][vimlogo ressource link]{: style="float: left; display: inline-block; max-width: 7rem; margin-right: var(--spacer);"}][vimlogo attribution link]
 Vim is a keyboard driven, insanely sophisticated text editor. It is [battle proven](https://groups.google.com/g/vim_announce/c/bQtQSHTK1sg), reliable and fun.
 
 Vim is not keyboard driven as in "I can enter text with my keyboard", although it is capable of doing that.

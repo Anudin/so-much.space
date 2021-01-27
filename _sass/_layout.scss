@@ -14,3 +14,23 @@ footer {
   margin-top: var(--spacer-3);
   margin-bottom: var(--spacer-3);
 }
+
+.social-media-list {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+.social-media-list {
+  display: table;
+  li {
+    float: left;
+    &:last-of-type { margin-right: 0 }
+    a {
+      display: block;
+      padding: 7.5px;
+      // &:hover { border-color: $border-color-02 }
+    }
+  }
+}
