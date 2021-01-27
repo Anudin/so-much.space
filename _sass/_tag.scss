@@ -1,0 +1,14 @@
+ul.tags {
+  display: block;
+  list-style: none;
+  margin: var(--spacer) 0;
+  padding: 0;
+}
+
+li.tag {
+  border-radius: 9999rem;
+  border: 2px solid var(--body-color);
+  display: inline-block;
+  font-size: var(--body-font);
+  padding: 0.3rem 1rem;
+}
