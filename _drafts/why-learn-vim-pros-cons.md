@@ -92,5 +92,5 @@ If you use specialized editors regulary, start off using a plugin for those or c
 Questions will arise naturally, address those and take notes.
 Use a standard text editor or switch off your Vim plugin when you get overwhelmed.
 
-[vimlogo ressource link]: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/200px-Vimlogo.svg.png
+[vimlogo ressource link]: https://upload.wikimedia.org/wikipedia/commons/9/9f/Vimlogo.svg
 [vimlogo attribution link]: https://commons.wikimedia.org/wiki/File:Vimlogo.svg "User:D0ktorz, GPL &lt;http://www.gnu.org/licenses/gpl.html&gt;, via Wikimedia Commons"
