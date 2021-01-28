@@ -8,12 +8,16 @@
   padding-top: var(--spacer);
   padding-bottom: var(--spacer);
   margin-bottom: var(--spacer-3);
-}
 
-img.masthead-logo {
-  height: 4rem;
-  margin-bottom: 0;
-  object-fit: contain;
+  & &-logo {
+    flex: 1;
+
+    img {
+      max-height: 4rem;
+      margin-bottom: 0;
+      object-fit: contain;
+    }
+  }
 }
 
 .masthead-title {

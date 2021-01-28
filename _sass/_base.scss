@@ -81,11 +81,17 @@ mark {
 }
 
 .svg-icon {
+  $icon-scale: 1.5;
+
   box-sizing: unset;
   color: black;
   display: inline-block;
-  height: 16px;
+  height: 16px * $icon-scale;
   padding: 5px 3px 2px 5px;
   vertical-align: text-bottom;
-  width: 16px;
+  width: 16px * $icon-scale;
+
+  use {
+    transform: scale($icon-scale);
+  }
 }
