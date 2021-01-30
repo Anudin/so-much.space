@@ -6,8 +6,8 @@ ul.tags {
 }
 
 li.tag {
+  background-color: var(--gray-100);
   border-radius: 9999rem;
-  border: 2px solid var(--gray-600);
   color: var(--gray-600);
   display: inline-block;
   font-size: 85%;
