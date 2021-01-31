@@ -166,10 +166,12 @@ Here are a few ones that stand out to me:
 Vim runs in your terminal.
 Configuring color themes and setting up your favorite font can be a major pain in the ass.
 Using different fonts or font sizes is plain impossible.
-Also I think some things are just better displayed in a nice GUI.
-However, in real life use it's not as bad as it sounds and the situation is improving:
+Then there's the fact that some things are just better displayed in a nice GUI (like complex diffs).\
+While those are all very valid caveits, they are not a big problem in day to day use.
+A lot of tasks that benefit from a GUI have good standalone clients available.
+Also, the situation is improving:
 
-* There exist GUI implementations.
+* There are GUIs in development (but I haven't found one I'm happy with *yet*).
 * This is Neovim specific: Neovim can be embedded in other programs.\
   Usually Vim plugins are more or less good clones, missing critical features (espescially falling short on macro support).
   With embeddings you can get most all benefits of Vim in a full blown IDE, for example.
@@ -179,12 +181,19 @@ However, in real life use it's not as bad as it sounds and the situation is impr
 But read on.\
 Modern developers are blessed with wonderful tooling.
 Global renaming or searching for definitions and usage come to mind.
-Thanks to the Language Server Protocol (LSP) such tools are [available](https://github.com/neoclide/coc.nvim) in Vim :heart:\
+Thanks to the Language Server Protocol (LSP) such tools are [available](https://github.com/neoclide/coc.nvim) in Vim :heart:
+
 So why do I think this qualifies as a caveit?
-Because some tech stacks benefit from additional tooling and configuring Vim for every stack is hard
-(formatters & linters, inspection tools, REPL integration, ...).\
+
+1. Because some tech stacks benefit from additional tooling and configuring Vim for every stack is hard
+(inspection tools, REPL integration, ...).\
 If you're changing stacks frequently, Vim might not be the sharpest tool for the job.
 However you can still use a Vim plugin for your favorite IDE, see the next section.
+2. Debugging.
+As with everything, there are ways to do it in Vim.
+But let's be honest here:
+every major IDE will blow your Vim debugging session out of the water.
+Keep an IDE or a good standalone debugger around[^6].
 
 ## Wrapping it up
 Learning Vim gives you a consistent and precise interface for editing text and controlling your computer without a mouse.
@@ -225,6 +234,7 @@ Try `:help quit` :sunny:
 [^3]: Efficiently meaning not moving line by line with the arrow keys (or using the search to jump to a specific word - although that's a valid strategy sometimes).
 [^4]: Every sort of text with easily identifiable patterns. Definition: mine.
 [^5]: Using a plugin doesn't give you the full power of Vim (yet - see [Vim is not an IDE](#vim-is-not-an-ide)). At one point, you should probably try out the "real thing".
+[^6]: Similiar to the LSP mentioned, there is work on a [Debug Adapter Protocol (DAP)](https://microsoft.github.io/debug-adapter-protocol/). However it doesn't seem ready for use yet.
 
 [vimlogo ressource link]: https://upload.wikimedia.org/wikipedia/commons/9/9f/Vimlogo.svg
 [vimlogo attribution link]: https://commons.wikimedia.org/wiki/File:Vimlogo.svg "User:D0ktorz, GPL &lt;http://www.gnu.org/licenses/gpl.html&gt;, via Wikimedia Commons"
