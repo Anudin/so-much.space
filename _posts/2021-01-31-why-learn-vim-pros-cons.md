@@ -5,6 +5,7 @@ tags:
   - dev
   - editor
   - mouseless
+  - tool
   - vim
 ---
 Why bother learning a text editor anecdotally *so* hard to exit, that unplugging your computer might be easier?
@@ -51,104 +52,115 @@ I'm trying to keep this list lean and convincing.
 If you are missing a feature while reading through this list, keep in mind it probaby exists in Vim (like bookmarks, fold support and calculations).
 
 ### Keep your fingers on the home row.
-  Through the power of modal editing, you can work efficiently without a mouse.
-  Especially as a touch typist you'll come to appreciate having your hands ankered on the home row at all times.
+Through the power of modal editing, you can work efficiently without a mouse.
+Especially as a touch typist you'll come to appreciate having your hands ankered on the home row at all times.
+
 ### Edit with precision.
-  Vim makes heavy use of [motions and text objects](https://blog.carbonfive.com/vim-text-objects-the-definitive-guide/) to enable something I'll call declarative editing -
-  you just tell the editor what you want and it does the legwork.\
-  Delete a word? `daw`.
-  Delete a sentence? `das`.
-  Delete a paragraph? `dap`.
-  That covers natural language pretty well.
-  It's just as easy to delete a line, delete text between double quotes or brackets, the list goes on.\
-  Of course you're not just deleting text, are you?
-  The same schema applies other operations like copying, changing or visually selecting text.
+Vim makes heavy use of [motions and text objects](https://blog.carbonfive.com/vim-text-objects-the-definitive-guide/) to enable something I'll call declarative editing -
+you just tell the editor what you want and it does the legwork.\
+Delete a word? `daw`.
+Delete a sentence? `das`.
+Delete a paragraph? `dap`.
+That covers natural language pretty well.
+It's just as easy to delete a line, delete text between double quotes or brackets, the list goes on.\
+Of course you're not just deleting text, are you?
+The same schema applies other operations like copying, changing or visually selecting text.
+
 ### Intuitive macros.
-  Since all your editing in Vim is controlled with your keyboard it is essentially controlled by typing in text.
-  Vim allows you to record your text inputs to create [macros](https://www.redhat.com/sysadmin/use-vim-macros).
-  Since a macro is therefore just text, it can be edited like any other old peace of text.\
-  This is the least magical and most intuitive use of macros that I know of.
+Since all your editing in Vim is controlled with your keyboard it is essentially controlled by typing in text.
+Vim allows you to record your text inputs to create [macros](https://www.redhat.com/sysadmin/use-vim-macros).
+Since a macro is therefore just text, it can be edited like any other old peace of text.\
+This is the least magical and most intuitive use of macros that I know of.
+
 ### The king of structured text editing.
-  The last two points (precision & macros) combined make Vim the king of structured text[^4] editing.
-  It makes editing structured text *fun*. There, I said it.\
-  Do you want to swap the first two sentences of each line? The first and the last?
-  Want to [execute this operation](https://vim.fandom.com/wiki/Power_of_g) on every line containing a specific word (or Regex)?
-  All trivial.
-### Never loose text through undo / redo (again).
-  This is very hard to put in words so bear with me.
-  Let's try to walk through an example situation which probably happened to you.
+The last two points (precision & macros) combined make Vim the king of structured text[^4] editing.
+It makes editing structured text *fun*. There, I said it.\
+Do you want to swap the first two sentences of each line? The first and the last?
+Want to [execute this operation](https://vim.fandom.com/wiki/Power_of_g) on every line containing a specific word (or Regex)?
+All trivial.
 
-  1. You write two sentences. This is what you come up with:\
-  `You write tow sentences. This is the second sentence.`
-  2. You realize your typo with "tow".
-  You undo your changes up to this word, correct it and press save.\
-  `You write two`
-  3. As you press redo to get the rest of your work back you realize your mistake.
-  There's nothing to redo.
-  History is linear.
-  How could you do such a beginner mistake?
+### Never loose text through undo / redo.
+This is very hard to put in words so bear with me.
+Let's try to walk through an example situation which probably happened to you.
 
-  To really get this I encourage you to type the two sentences and apply the changes as described in your favorite editor.
-  Ok, understood the problem?\
-  It's not a problem in Vim.
-  Instead of a linear change history, Vim uses a tree structure - the undo *tree*.
-  For those interested in learning how it works or how to use it I'll just drop a [link](https://vim.fandom.com/wiki/Using_undo_branches).
-  I feel that the undo tree is most useful when visualized, check out the screencast linked [here](https://simnalamburt.github.io/vim-mundo/).
+1. You write two sentences. This is what you come up with:\
+`You write tow sentences. This is the second sentence.`
+2. You realize your typo with "tow".
+You undo your changes up to this word, correct it and press save.\
+`You write two`
+3. As you press redo to get the rest of your work back you realize your mistake.
+There's nothing to redo.
+History is linear.
+How could you do such a beginner mistake?
+
+To really get this I encourage you to type the two sentences and apply the changes as described in your favorite editor.
+Ok, understood the problem?\
+It's not a problem in Vim.
+Instead of a linear change history, Vim uses a tree structure - the undo *tree*.
+For those interested in learning how it works or how to use it I'll just drop a [link](https://vim.fandom.com/wiki/Using_undo_branches).
+I feel that the undo tree is most useful when visualized, check out the screencast linked [here](https://simnalamburt.github.io/vim-mundo/).
+
 ### Powerful window management.
-  Vim lets you create pretty much every editor layout you can think of using splits.
-  Here is a basic example of me editing this article:
+Vim lets you create pretty much every editor layout you can think of using splits.
+Here is a basic example of me editing this article:
 
-  ![Image: Vim UI with multiple splits](/assets/vim-splits-demo.png)
+![Image: Vim UI with multiple splits](/assets/vim-splits-demo.png)
 
-  A few things to note.\
-  First, while splits can be used to see multiple files simultaneously, in Vim they can also be used to see multiple views of *the same* file (at different positions).
-  The two panes highlighted with red borders show this.\
-  Complex layouts can be achieved by nesting horizontal and vertical splits as can be seen on the right half of the screenshot.
-  Rest assured that this is a simple example and that you can go as crazy as you want with adding more splits.\
-  Now my favorite.
-  Vim supports tabs like most other editors, but **each tab has its own layout**.
-  You can use the layout that is most appropriate for the task at hand and switch by switching tabs.
+A few things to note.\
+First, while splits can be used to see multiple files simultaneously, in Vim they can also be used to see multiple views of *the same* file (at different positions).
+The two panes highlighted with red borders show this.\
+Complex layouts can be achieved by nesting horizontal and vertical splits as can be seen on the right half of the screenshot.
+Rest assured that this is a simple example and that you can go as crazy as you want with adding more splits.\
+Now my favorite.
+Vim supports tabs like most other editors, but **each tab has its own layout**.
+You can use the layout that is most appropriate for the task at hand and switch by switching tabs.
+
 ### Wield the power of the shell.
-  This is more applicable for developers and power users in general.
-  Vim is very close to the shell.
-  It runs in one per default.
-  You can run shell commands from Vim and insert the result as text into your file.
-  You can even open a terminal *inside of* Vim with your favorite shell to integrate it into your editor layout.
+This is more applicable for developers and power users in general.
+Vim is very close to the shell.
+It runs in one per default.
+You can run shell commands from Vim and insert the result as text into your file.
+You can even open a terminal *inside of* Vim with your favorite shell to integrate it into your editor layout.
+
 ### It's full of features.
-  This list is a shallow overview at best, there's [way more](https://www.hillelwayne.com/post/intermediate-vim/) (also `:help registers`, `:help tips`) to discover.
-  Something important to note here. **Don't get overwhelmed**. You don't have to use every single feature.
+This list is a shallow overview at best, there's [way more](https://www.hillelwayne.com/post/intermediate-vim/) (also `:help registers`, `:help tips`) to discover.
+Something important to note here. **Don't get overwhelmed**. You don't have to use every single feature.
+
 ### Feels like coming home.
 Vim is [extensible](https://vimawesome.com/) and customizable.
 Give it some time and it will be *your* Vim, with just the right feature set and shortcuts tailored to your needs.
 Just maybe go slow on this when starting out.
+
 ### A unified computing experience.
 In learning Vim you learn a control scheme that's useable in many different places (see [the last section](#wrapping-it-up)).
 It can set you on a journey to think about how you interact with your computer and ultimately lead you to a more unified computing experience.
 
 ## Caveits
 ### Touch typing is a prerequisite to some degree.
-  As *Practical Vim* puts it (pretty much right at the beginning of the book):
+As *Practical Vim* puts it (pretty much right at the beginning of the book):
 
-  > If you have to look down to find the keys on the keyboard, the benefits of learning Vim won’t come fast. Learning to touch type is imperative.
+> If you have to look down to find the keys on the keyboard, the benefits of learning Vim won’t come fast. Learning to touch type is imperative.
 
-  You don't have to use ten fingers, but if you have to look before each key press Vim just won't be that useful.
-  Also, using ten fingers won't hurt.
+You don't have to use ten fingers, but if you have to look before each key press Vim just won't be that useful.
+Also, using ten fingers won't hurt.
+
 ### Learning Vim takes time.
-  Using a modal text editor is most likely a mode of editing you're completely new to.
-  You can't really blame Vim for it but this is just something that you need to be aware of.
+Using a modal text editor is most likely a mode of editing you're completely new to.
+You can't really blame Vim for it but this is just something that you need to be aware of.
+
 ### Discoverability is not Vims strength (at all).
-  It's partly by design.
-  From the vim.org "about" page:
+It's partly by design.
+From the vim.org "about" page:
 
-  > Vim isn't an editor designed to hold its users' hands. It is a tool, the use of which must be learned.
+> Vim isn't an editor designed to hold its users' hands. It is a tool, the use of which must be learned.
 
-  It's a fair design decision for a professional tool.
-  However it lead to a situation where information on effective use is spread between a lot of sources.
-  Here are a few ones that stand out to me:
+It's a fair design decision for a professional tool.
+However it lead to a situation where information on effective use is spread between a lot of sources.
+Here are a few ones that stand out to me:
 
-  * [vim.fandom](https://vim.fandom.com/wiki/Vim_Tips_Wiki)
-  * [thoughtbot](https://thoughtbot.com/blog/search?utf8=%E2%9C%93&query=vim)
-  * *Practical Vim*
+* [vim.fandom](https://vim.fandom.com/wiki/Vim_Tips_Wiki)
+* [thoughtbot](https://thoughtbot.com/blog/search?utf8=%E2%9C%93&query=vim)
+* *Practical Vim*
 
 ### The limits of the terminal.
 Vim runs in your terminal.
@@ -164,15 +176,15 @@ However, in real life use it's not as bad as it sounds and the situation is impr
   At the time of writing this is still pretty experimental but I wouldn't be suprised if it is the future of Vim.
 
 ### Vim is not an IDE.
-  But read on.\
-  Modern developers are blessed with wonderful tooling.
-  Global renaming or searching for definitions and usage come to mind.
-  Thanks to the Language Server Protocol (LSP) such tools are [available](https://github.com/neoclide/coc.nvim) in Vim :heart:\
-  So why do I think this qualifies as a caveit?
-  Because some tech stacks benefit from additional tooling and configuring Vim for every stack is hard
-  (formatters & linters, inspection tools, REPL integration, ...).\
-  If you're changing stacks frequently, Vim might not be the sharpest tool for the job.
-  However you can still use a Vim plugin for your favorite IDE, see the next section.
+But read on.\
+Modern developers are blessed with wonderful tooling.
+Global renaming or searching for definitions and usage come to mind.
+Thanks to the Language Server Protocol (LSP) such tools are [available](https://github.com/neoclide/coc.nvim) in Vim :heart:\
+So why do I think this qualifies as a caveit?
+Because some tech stacks benefit from additional tooling and configuring Vim for every stack is hard
+(formatters & linters, inspection tools, REPL integration, ...).\
+If you're changing stacks frequently, Vim might not be the sharpest tool for the job.
+However you can still use a Vim plugin for your favorite IDE, see the next section.
 
 ## Wrapping it up
 Learning Vim gives you a consistent and precise interface for editing text and controlling your computer without a mouse.
