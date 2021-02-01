@@ -9,4 +9,6 @@ gem "jemoji"
 gem "jekyll-sitemap"
 # TODO Should use jekyll-assets
 # TODO Could use jekyll-tagories
-# TODO Should use jekyll-fontawesome-svg
+# TODO Should use jekyll-fontawesome-svg / jekyll-fontawesome-sass
+# TODO Should use jekyll_picture_tag
+# TODO Should use jekyll-lightbox
