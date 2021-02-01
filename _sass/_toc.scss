@@ -1,6 +1,8 @@
 // Table of Contents
 
 #markdown-toc {
+  border: dashed var(--border-color);
+  border-width: 0.2rem 0;
   padding: var(--spacer-2);
 
   li {
