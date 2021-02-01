@@ -104,7 +104,7 @@ I feel that the undo tree is most useful when visualized, check out the screenca
 Vim lets you create pretty much every editor layout you can think of using splits.
 Here is a basic example of me editing this article:
 
-![Image: Vim UI with multiple splits](/assets/vim-splits-demo.png)
+[![Image: Vim UI with multiple splits](/assets/vim-splits-demo.png)](/assets/vim-splits-demo.png)
 
 A few things to note.\
 First, while splits can be used to see multiple files simultaneously, in Vim they can also be used to see multiple views of *the same* file (at different positions).
