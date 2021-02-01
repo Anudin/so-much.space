@@ -2,7 +2,7 @@
 title: so much space
 tagline:
 url: https://so-much.space
-paginate: 1
+paginate: 3
 baseurl: ""
 permalink: /nuggets/:categories/:slug/
 
