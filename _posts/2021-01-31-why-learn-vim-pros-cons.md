@@ -25,16 +25,16 @@ I personally use [Neovim](https://neovim.io/) but the points of this post stand 
 {: .message}
 
 ## What is a Vim?
-[![Image: Vimlogo][vimlogo ressource link]{: style="float: left; display: inline-block; max-width: 7rem; margin-right: var(--spacer);"}][vimlogo attribution link]
+[![Vimlogo][vimlogo ressource link]{: style="float: left; display: inline-block; max-width: 7rem; margin-right: var(--spacer);"}][vimlogo attribution link]
 Vim is a **keyboard driven**, insanely sophisticated text editor. It is [battle proven](https://groups.google.com/g/vim_announce/c/bQtQSHTK1sg), reliable and fun.
 
 Vim isn't keyboard driven as in "I can enter text with my keyboard", although it is capable of doing that.
-It is keyboard driven as in "I can do (almost) anything with my keyboard"[^1].
+It is keyboard driven as in "I can do (almost) *anything* with my keyboard"[^1].
 We'll go into details on this in the next section, when we learn [What's Awesome](#whats-awesome).
 For now, let's pretend Vims only separating feature was that it allows us to efficiently navigate text with the keyboard[^3] in addition to editing.
 
 In broad strokes, how does it work?
-Vim is a **modal** text editor, it operates in modes.
+Vim is a **modal text editor**, it operates in modes.
 The same key can have different functionalities depending on the active mode.\
 When you start the editor, it is in `NORMAL` mode.
 Normal mode allows you to navigate text with your keyboard (and more[^2]).
@@ -96,30 +96,30 @@ How could you do such a beginner mistake?
 To really get this I encourage you to type the two sentences and apply the changes as described in your favorite editor.
 Ok, understood the problem?\
 It's not a problem in Vim.
-Instead of a linear change history, Vim uses a tree structure - the undo *tree*.
+Instead of a linear representation, Vim keeps the undo / redo history in a tree structure - the "undo tree".
 For those interested in learning how it works or how to use it I'll just drop a [link](https://vim.fandom.com/wiki/Using_undo_branches).
-I feel that the undo tree is most useful when visualized, check out the screencast linked [here](https://simnalamburt.github.io/vim-mundo/).
+For a visualization, you can check out a screencast linked [here](https://simnalamburt.github.io/vim-mundo/).
 
 ### Powerful window management.
 Vim lets you create pretty much every editor layout you can think of using splits.
 Here is a basic example of me editing this article:
 
-[![Image: Vim UI with multiple splits](/assets/vim-splits-demo.png)](/assets/vim-splits-demo.png)
+[![Vim UI with multiple splits](/assets/vim-splits-demo.png)](/assets/vim-splits-demo.png)
 
 A few things to note.\
-First, while splits can be used to see multiple files simultaneously, in Vim they can also be used to see multiple views of *the same* file (at different positions).
+First, while splits can be used to see multiple files simultaneously, in Vim they can also be used to see multiple views of the same file (at different positions).
 The two panes highlighted with red borders show this.\
 Complex layouts can be achieved by nesting horizontal and vertical splits as can be seen on the right half of the screenshot.
 Rest assured that this is a simple example and that you can go as crazy as you want with adding more splits.\
 Now my favorite.
-Vim supports tabs like most other editors, but **each tab has its own layout**.
+Vim supports tabs like most other editors, but each tab has its own layout.
 You can use the layout that is most appropriate for the task at hand and switch by switching tabs.
 
 ### Wield the power of the shell.
 This is more applicable for developers and power users in general.
 Vim is very close to the shell.
 It runs in one per default.
-You can run shell commands from Vim and insert the result as text into your file.
+You can run shell commands from Vim and read the output as text into your file.
 You can even open a terminal *inside of* Vim with your favorite shell to integrate it into your editor layout.
 
 ### It's full of features.
@@ -137,7 +137,7 @@ It can set you on a journey to think about how you interact with your computer a
 
 ## Caveits
 ### Touch typing is a prerequisite to some degree.
-As *Practical Vim* puts it (pretty much right at the beginning of the book):
+As Practical Vim puts it (pretty much right at the beginning of the book):
 
 > If you have to look down to find the keys on the keyboard, the benefits of learning Vim won’t come fast. Learning to touch type is imperative.
 
@@ -160,7 +160,7 @@ Here are a few ones that stand out to me:
 
 * [vim.fandom](https://vim.fandom.com/wiki/Vim_Tips_Wiki)
 * [thoughtbot](https://thoughtbot.com/blog/search?utf8=%E2%9C%93&query=vim)
-* *Practical Vim*
+* [Practical Vim](https://pragprog.com/titles/dnvim2/practical-vim-second-edition/)
 
 ### The limits of the terminal.
 Vim runs in your terminal.
@@ -216,7 +216,7 @@ Begin your journey with small scale simple text editing tasks like composing an 
 If you use specialized editors regulary, start of using a plugin for those or check for integrated vim modes to ease the transition.
 Questions will arise naturally, address those and take notes.
 Use a standard text editor or switch off your Vim plugin when you get overwhelmed.\
-Finally, when you feel relatively comfortable, start to take a look at plugins and skim through *Practical Vim*.
+Finally, when you feel relatively comfortable, start to take a look at plugins and skim through Practical Vim.
 
 There's one special tip for every aspiring Vimmer that I want to highlight.
 In fact I think it's a useful tip for most people using a computer.
