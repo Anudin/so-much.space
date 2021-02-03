@@ -123,7 +123,11 @@ You can run shell commands from Vim and read the output as text into your file.
 You can even open a terminal *inside of* Vim with your favorite shell to integrate it into your editor layout.
 
 ### It's full of features.
-This list is a shallow overview at best, there's [way more](https://www.hillelwayne.com/post/intermediate-vim/) (also `:help registers`, `:help tips`) to discover.
+This list is a shallow overview at best, there's
+  [way](https://www.hillelwayne.com/post/intermediate-vim/) -
+  [more](https://stackoverflow.com/questions/726894/what-are-the-dark-corners-of-vim-your-mom-never-told-you-about)
+  (also `:help tips` and `:help registers`)
+  to discover.
 Something important to note here. **Don't get overwhelmed**. You don't have to use every single feature.
 
 ### Feels like coming home.
