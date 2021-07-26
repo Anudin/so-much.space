@@ -139,7 +139,7 @@ Just maybe go slow on this when starting out.
 In learning Vim you learn a control scheme that's useable in many different places (see [the last section](#wrapping-it-up)).
 It can set you on a journey to think about how you interact with your computer and ultimately lead you to a more unified computing experience.
 
-## Caveits
+## Caveats
 ### Touch typing is a prerequisite to some degree.
 As Practical Vim puts it (pretty much right at the beginning of the book):
 
@@ -217,7 +217,7 @@ Now how does one learn Vim? With time and patience.\
 I suggest you learn about `vimtutor` with your favorite search engine.
 Finish it, then get to action.
 Begin your journey with small scale simple text editing tasks like composing an e-mail.
-If you use specialized editors regulary, start of using a plugin for those or check for integrated vim modes to ease the transition.
+If you use specialized editors regular, start of using a plugin for those or check for integrated vim modes to ease the transition.
 Questions will arise naturally, address those and take notes.
 Use a standard text editor or switch off your Vim plugin when you get overwhelmed.\
 Finally, when you feel relatively comfortable, start to take a look at plugins and skim through Practical Vim.
