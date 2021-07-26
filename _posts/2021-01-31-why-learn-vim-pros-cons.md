@@ -4,7 +4,7 @@ title: Why Learn (Neo)Vim?
 tags:
   - dev
   - editor
-  - mouseless
+  - mouse-less
   - tool
   - vim
 ---
@@ -49,11 +49,11 @@ Maybe you can even start to imagine the power that comes with not only using you
 
 ## What's Awesome
 I'm trying to keep this list lean and convincing.
-If you are missing a feature while reading through this list, keep in mind it probaby exists in Vim (like bookmarks, fold support and calculations).
+If you are missing a feature while reading through this list, keep in mind it probably exists in Vim (like bookmarks, fold support and calculations).
 
 ### Keep your fingers on the home row.
 Through the power of modal editing, you can work efficiently without a mouse.
-Especially as a touch typist you'll come to appreciate having your hands ankered on the home row at all times.
+Especially as a touch typist you'll come to appreciate having your hands anchored on the home row at all times.
 
 ### Edit with precision.
 Vim makes heavy use of [motions and text objects](https://blog.carbonfive.com/vim-text-objects-the-definitive-guide/) to enable something I'll call declarative editing -
@@ -171,15 +171,15 @@ Vim runs in your terminal.
 Configuring color themes and setting up your favorite font can be a major pain in the ass.
 Using different fonts or font sizes is plain impossible.
 Then there's the fact that some things are just better displayed in a nice GUI (like complex diffs).\
-Those are all very valid caveits, but no show stoppers in my experience.
+Those are all very valid caveats, but no show stoppers in my experience.
 A lot of tasks that benefit from a GUI have good standalone clients available.
 Also:
 
 * There are GUIs in development (but I haven't found one I'm happy with *yet*).
 * This is Neovim specific: Neovim can be embedded in other programs.\
-  Usually Vim plugins are more or less good clones, missing critical features (espescially falling short on macro support).
+  Usually Vim plugins are more or less good clones, missing critical features (especially falling short on macro support).
   With embeddings you can theoretically get most all benefits of Vim in a full blown IDE, for example.
-  At the time of writing this is still pretty experimental but I wouldn't be suprised if it is the future of Vim.
+  At the time of writing this is still pretty experimental but I wouldn't be surprised if it is the future of Vim.
 
 ### Vim is not an IDE.
 The same way VS Code is not an IDE. Don't @ me.
@@ -189,7 +189,7 @@ Modern developers are blessed with wonderful tooling.
 Renaming all occurrences of a symbol, searching for definitions and usage come to mind.
 Thanks to the Language Server Protocol (LSP) such tools are [available](https://github.com/neoclide/coc.nvim) in Vim :heart:
 
-So why do I think this qualifies as a caveit?
+So why do I think this qualifies as a caveat?
 
 1. Because some tech stacks benefit from additional tooling and configuring Vim for every stack is hard
 (inspection tools, REPL integration, ...).
@@ -234,12 +234,12 @@ I switched mine with `Caps Lock` and it makes all the difference.
 
 Try `:help quit` :sunny:
 
-[^1]: To what extend a keyboard only workflow is desireable is a topic for another post.
-[^2]: And more. I'll obmit those two words from now on, since that applies to basically everything in Vim.
+[^1]: To what extend a keyboard only workflow is desirable is a topic for another post.
+[^2]: And more. I'll omit those two words from now on, since that applies to basically everything in Vim.
 [^3]: Efficiently meaning not moving line by line with the arrow keys (or using the search to jump to a specific word - although that's a valid strategy sometimes).
 [^4]: Every sort of text with easily identifiable patterns. Definition: mine.
 [^5]: Using a plugin doesn't give you the full power of Vim (yet - see [Vim is not an IDE](#vim-is-not-an-ide)). At one point, you should probably try out the "real thing".
-[^6]: Similiar to the LSP mentioned, there is work being done on the [Debug Adapter Protocol (DAP)](https://microsoft.github.io/debug-adapter-protocol/). I won't recommend it yet (maybe never). We have IDEs with fantastic debugger support, just use them when appropriate.
+[^6]: Similar to the LSP mentioned, there is work being done on the [Debug Adapter Protocol (DAP)](https://microsoft.github.io/debug-adapter-protocol/). I won't recommend it yet (maybe never). We have IDEs with fantastic debugger support, just use them when appropriate.
 
 [vimlogo ressource link]: https://upload.wikimedia.org/wikipedia/commons/9/9f/Vimlogo.svg
 [vimlogo attribution link]: https://commons.wikimedia.org/wiki/File:Vimlogo.svg "User:D0ktorz, GPL &lt;http://www.gnu.org/licenses/gpl.html&gt;, via Wikimedia Commons"
