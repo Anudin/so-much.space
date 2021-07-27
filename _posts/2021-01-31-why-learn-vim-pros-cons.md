@@ -13,15 +13,15 @@ Why bother learning a text editor anecdotally *so* hard to exit, that unplugging
 * TOC
 {:toc}
 
-If you've ever been to r/ProgrammerHumor you've seen the the memes.\
+If you've ever been to r/ProgrammerHumor you've seen the the memes.
 If not, a quick search on "exiting vim memes" gives you an idea of the phenomenon I'm referencing here.
 There's also [this](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/).\
-Let's get this out of the way first. Exiting Vim isn't hard, it is different.
-Actually, *using* Vim isn't hard, it is *different*.\
-So how do you actually close Vim?
-I'll tell you when you read the article.
+Let's get this out of the way first: exiting Vim isn't hard, it is different.
+Actually - using Vim isn't hard, it is different.\
+First let us get into what Vim actually is.
+Later I shall tell you how to exit it.
 
-I personally use [Neovim](https://neovim.io/) but the points of this post stand for Vim nevertheless.
+Quick note: I personally use [Neovim](https://neovim.io/) but the points of this post stand for Vim nevertheless.
 {: .message}
 
 ## What is a Vim?
@@ -29,21 +29,22 @@ I personally use [Neovim](https://neovim.io/) but the points of this post stand 
 Vim is a **keyboard driven**, insanely sophisticated text editor. It is [battle proven](https://groups.google.com/g/vim_announce/c/bQtQSHTK1sg), reliable and fun.
 
 Vim isn't keyboard driven as in "I can enter text with my keyboard", although it is capable of doing that.
-It is keyboard driven as in "I can do (almost) *anything* with my keyboard"[^1].
+It is keyboard driven as in "I can do (almost) anything with my keyboard"[^1].
 We'll go into details on this in the next section, when we learn [What's Awesome](#whats-awesome).
-For now, let's pretend Vims only separating feature was that it allows us to efficiently navigate text with the keyboard[^3] in addition to editing.
+For now, let's pretend Vim's only separating feature was that it allows us to efficiently[^3] navigate text with the keyboard in addition to editing.
 
 In broad strokes, how does it work?
 Vim is a **modal text editor**, it operates in modes.
 The same key can have different functionalities depending on the active mode.\
 When you start the editor, it is in `NORMAL` mode.
-Normal mode allows you to navigate text with your keyboard (and more[^2]).
+This mode allows you to navigate text with your keyboard (and more)[^2].
 You can navigate to the start or end of a file, a specific line or move the cursor.\
-Then there's `INSERT` mode, which is activated by pressing "`i`" and left by pressing "`Esc`".
-Insert mode is what you're most likely used to.
-Typing on your keyboard lets you insert and remove text, "`Enter`" gives you a line break.
-The usual.\
-That's of course only the beginning of the story as `NORMAL` and `INPUT` mode are just two of the available six modes.
+Then there's `INSERT` mode, which is activated by pressing "i".
+This mode is what you're most likely used to.
+Typing on your keyboard lets you insert and remove text, "Enter" gives you a line break.
+The usual.
+Pressing "Escape" leaves the mode.\
+That's of course only the beginning of the story as `NORMAL` and `INSERT` mode are just two of the available seven modes.
 However my hope is that this short description illustrates the idea of modal editing.
 Maybe you can even start to imagine the power that comes with not only using your keyboard for plain text entry.
 
@@ -58,11 +59,11 @@ Especially as a touch typist you'll come to appreciate having your hands anchore
 ### Edit with precision.
 Vim makes heavy use of [motions and text objects](https://blog.carbonfive.com/vim-text-objects-the-definitive-guide/) to enable something I'll call declarative editing -
 you just tell the editor what you want and it does the legwork.\
-Delete a word? `daw`.
-Delete a sentence? `das`.
-Delete a paragraph? `dap`.
+Delete a word? `daw`.\
+Delete a sentence? `das`.\
+Delete a paragraph? `dap`.\
 That covers natural language pretty well.
-It's just as easy to delete a line, delete text between double quotes or brackets, the list goes on.\
+It's just as easy to delete a line, delete text between double quotes or brackets, the list goes on.
 Of course you're not just deleting text, are you?
 The same schema applies other operations like copying, changing or visually selecting text.
 
@@ -74,12 +75,12 @@ This is the least magical and most intuitive use of macros that I know of.
 
 ### The king of structured text editing.
 The last two points (precision & macros) combined make Vim the king of structured text[^4] editing.
-It makes editing structured text *fun*. There, I said it.\
+It makes editing structured text fun. There, I said it.\
 Do you want to swap the first two sentences of each line? The first and the last?
 Want to [execute this operation](https://vim.fandom.com/wiki/Power_of_g) on every line containing a specific word (or Regex)?
 All trivial.
 
-### Never loose text through undo / redo.
+### Never lose text through undo / redo.
 This is very hard to put in words so bear with me.
 Let's try to walk through an example situation which probably happened to you.
 
@@ -120,19 +121,16 @@ This is more applicable for developers and power users in general.
 Vim is very close to the shell.
 It runs in one per default.
 You can run shell commands from Vim and read the output as text into your file.
-You can even open a terminal *inside of* Vim with your favorite shell to integrate it into your editor layout.
+You can even open a terminal inside of Vim with your favorite shell to integrate it into your editor layout.
 
 ### It's full of features.
-This list is a shallow overview at best, there's
-  [way](https://www.hillelwayne.com/post/intermediate-vim/) -
-  [more](https://stackoverflow.com/questions/726894/what-are-the-dark-corners-of-vim-your-mom-never-told-you-about)
-  (also `:help tips` and `:help registers`)
-  to discover.
-Something important to note here. **Don't get overwhelmed**. You don't have to use every single feature.
+This list is a shallow overview at best, there's way more to discover
+(see [this](https://www.hillelwayne.com/post/intermediate-vim/) and [that](https://stackoverflow.com/questions/726894/what-are-the-dark-corners-of-vim-your-mom-never-told-you-about); also `:help tips` and `:help registers`).
+Something important to note here. Don't let yourself get overwhelmed. You don't have to use every single feature.
 
 ### Feels like coming home.
 Vim is [extensible](https://vimawesome.com/) and customizable.
-Give it some time and it will be *your* Vim, with just the right feature set and shortcuts tailored to your needs.
+Give it some time and it will be your Vim, with just the right feature set and shortcuts tailored to your needs.
 Just maybe go slow on this when starting out.
 
 ### A unified computing experience.
@@ -141,8 +139,7 @@ It can set you on a journey to think about how you interact with your computer a
 
 ## Caveats
 ### Touch typing is a prerequisite to some degree.
-
-As Drew Neil puts it in his book _Practical Vim_ (pretty much right at the beginning):
+As Drew Neil puts it in his book *Practical Vim* (pretty much right at the beginning):
 
 > If you have to look down to find the keys on the keyboard, the benefits of learning Vim won’t come fast. Learning to touch type is imperative.
 
@@ -153,7 +150,7 @@ Also, using ten fingers won't hurt.
 Using a modal text editor is most likely a mode of editing you're completely new to.
 You can't really blame Vim for it but this is just something that you need to be aware of.
 
-### Discoverability is not Vims strength (at all).
+### Discoverability is not Vim's strength (at all).
 It's partly by design.
 From the vim.org "about" page:
 
@@ -176,10 +173,10 @@ Those are all very valid caveats, but no show stoppers in my experience.
 A lot of tasks that benefit from a GUI have good standalone clients available.
 Also:
 
-* There are GUIs in development (but I haven't found one I'm happy with *yet*).
-* This is Neovim specific: Neovim can be embedded in other programs.\
-  Usually Vim plugins are more or less good clones, missing critical features (especially falling short on macro support).
-  With embeddings you can theoretically get most all benefits of Vim in a full blown IDE, for example.
+* There are GUIs in development (but I haven't found one I'm happy with yet).
+* This is Neovim specific: Neovim can be embedded in other programs.
+  Usually Vim plugins are more or less good clones, missing critical features (especially falling short on macro support).\
+  With embeddings you can theoretically get all benefits of Vim in a full blown IDE.
   At the time of writing this is still pretty experimental but I wouldn't be surprised if it is the future of Vim.
 
 ### Vim is not an IDE.
