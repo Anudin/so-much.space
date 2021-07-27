@@ -141,7 +141,8 @@ It can set you on a journey to think about how you interact with your computer a
 
 ## Caveats
 ### Touch typing is a prerequisite to some degree.
-As Practical Vim puts it (pretty much right at the beginning of the book):
+
+As Drew Neil puts it in his book _Practical Vim_ (pretty much right at the beginning):
 
 > If you have to look down to find the keys on the keyboard, the benefits of learning Vim won’t come fast. Learning to touch type is imperative.
 
