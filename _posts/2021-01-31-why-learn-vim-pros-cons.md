@@ -185,7 +185,7 @@ The same way VS Code is not an IDE. Don't @ me.
 
 Modern developers are blessed with wonderful tooling.
 Renaming all occurrences of a symbol, searching for definitions and usages come to mind.
-Thanks to the Language Server Protocol (LSP) and the open source community, such tools are [available in Vim](https://github.com/neoclide/coc.nvim) :heart:
+Thanks to the Language Server Protocol (LSP) and the open source community, such tools are [available in Vim](https://github.com/neoclide/coc.nvim) ❤️
 
 So why do I think this qualifies as a caveat?
 
@@ -226,7 +226,7 @@ I switched mine with `Caps Lock` and it makes all the difference.
   I still don't know how to exit... help
 </small>
 
-Try `:help quit` :sunny:
+Try `:help quit` ☀️
 
 [^cantexit]: I'm referencing [this phenomenon](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/).  
     Do a quick search on "exiting vim memes" to get an idea of the scope of the "problem".
