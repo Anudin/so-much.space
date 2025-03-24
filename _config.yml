@@ -8,11 +8,9 @@ permalink: /nuggets/:categories/:slug/
 
 # Gems
 plugins:
-  - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jemoji
 
 # Optimize Jekyll
 exclude:
