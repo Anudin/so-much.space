@@ -79,7 +79,7 @@ The same schema applies other operations like copying, changing or visually sele
 
 ### Intuitive macros.
 Since all your editing in Vim is controlled with your keyboard, it is only controlled by typing in text. Vim allows you to record your inputs to create macros. A "macro" in Vim is therefore just text! It can be edited like any other peace of text, if you mess up during a macro recording. This is the least magical and most intuitive use of macros that I know of.  
-This is probably easier to understand with an example: [click here]([macros](https://www.redhat.com/sysadmin/use-vim-macros)).
+This is probably easier to understand with an example: [click here](https://www.redhat.com/sysadmin/use-vim-macros).
 
 ### The king of structured text editing.
 The last two points (precision & macros) combined make Vim the king of structured text[^4] editing.
