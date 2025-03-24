@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Why Learn (Neo)Vim?
+slug: Why learn Vim? Pros & cons.
 tags:
   - dev
   - editor

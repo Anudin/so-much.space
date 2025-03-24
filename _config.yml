@@ -43,5 +43,14 @@ author:
     github: Anudin
     linkedin: bastian-böhm
 
-# Custom vars
-version: 3.0.0
+# === Custom ===
+
+defaults:
+  - scope:
+      path: "**/*"
+    values:
+      layout: "default"
+  - scope:
+      path: "_posts/**/*.md"
+    values:
+      layout: "post"
