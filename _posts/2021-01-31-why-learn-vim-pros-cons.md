@@ -11,13 +11,10 @@ tags:
 Do you like learning new skills? Do you spend any significant time working with text on at a computer?
 Then let me show you how to get _enjoyment_ out of even the most monotonous writing or editing tasks.
 
-
+Here's what we will be going over together:
 
 * TOC
 {:toc}
-
-Heads-up: I use [Neovim](https://neovim.io/), which is different from standard Vim. The points of this post stand regardless.
-{: .message}
 
 ## What is a "Vim"?
 [![Vimlogo][vimlogo ressource link]{: style="float: left; display: inline-block; max-width: 7rem; margin-right: var(--spacer);"}][vimlogo attribution link]
@@ -42,6 +39,9 @@ Pressing "Escape" leaves the mode.\
 That's of course only the beginning of the story as `NORMAL` and `INSERT` mode are just two of the available seven modes.
 However, my hope is that this short description illustrates the idea of modal editing.
 Maybe you can even start to imagine the power that comes with not only using your keyboard for plain text entry.
+
+Quick aside: I don't use standard Vim, but [Neovim](https://neovim.io/). The points of this post apply to both.
+{: .message}
 
 ## What's Awesome
 I'm trying to keep this list lean and convincing.
