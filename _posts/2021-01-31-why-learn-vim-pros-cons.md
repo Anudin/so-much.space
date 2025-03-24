@@ -8,9 +8,10 @@ tags:
   - tool
   - vim
 ---
-Why bother learning a text editor that people can't even manage to exit[^cantexit], let alone type in?  
-Let me show you why I think the time invest might be worth it, by giving you a tour of some of my most beloved features.
-These are the points we're going over:
+Do you like learning new skills? Do you spend any significant time working with text on at a computer?
+Then let me show you how to get _enjoyment_ out of even the most monotonous writing or editing tasks.
+
+
 
 * TOC
 {:toc}
@@ -18,7 +19,7 @@ These are the points we're going over:
 Heads-up: I use [Neovim](https://neovim.io/), which is different from standard Vim. The points of this post stand regardless.
 {: .message}
 
-## What is a Vim?
+## What is a "Vim"?
 [![Vimlogo][vimlogo ressource link]{: style="float: left; display: inline-block; max-width: 7rem; margin-right: var(--spacer);"}][vimlogo attribution link]
 Vim is a **keyboard driven**, insanely sophisticated text editor. It is [battle proven](https://groups.google.com/g/vim_announce/c/bQtQSHTK1sg), reliable and fun.
 
@@ -45,6 +46,21 @@ Maybe you can even start to imagine the power that comes with not only using you
 ## What's Awesome
 I'm trying to keep this list lean and convincing.
 If you are missing a feature while reading through this list, keep in mind it probably exists in Vim (like bookmarks, fold support and calculations).
+
+### The value of learning.
+
+Let's start with a bold statement.  
+You will profit from learning Vim. Even if you end up not using or even disliking it.
+What did I get out of my journey to learn Vim?
+
+- I tought myself touch typing.
+- I started to use the terminal more regularly and learned about bash and other shells.
+- I started to consciously think about which keys of my keyboard I actually use, why I use them and the ergonomics of it all. This also drove me down the rabbit hole of [tiling window managers](https://www.techrepublic.com/article/linux-101-whats-a-tiling-window-manager/).
+- I finally understand macros and appreciate shortcuts more than ever. Too many overlapping shortcuts? A [hyper key](https://xam.io/2020/hyper-key/) can save you from headaches.
+- I can now appreciate that modes (as in _modal editor_) allow us to do more with less keys. You should check out [`<Leader>`](https://stackoverflow.com/a/1764336).
+
+Vim made me reflect and improve on my workflows and changed how I think about operating computers.
+It made me a power user.
 
 ### Keep your fingers on the home row.
 Through the power of modal editing, you can work efficiently without a mouse.
@@ -120,19 +136,6 @@ Just don't go overboard on this when starting out.
 ### A unified computing experience.
 In learning Vim you learn a control scheme that's usable in many places (see [the last section](#wrapping-it-up)).
 It can set you on a journey to think about how you interact with your computer and ultimately lead you to a more unified computing experience.
-
-### The value of learning.
-
-Even if you end up not using Vim, maybe even disliking it: you can profit from trying it.
-What did I learn from using Vim?
-
-- I learned touch typing.
-- I finally really understand macros and appreciate shortcuts more than ever.
-- I appreciate that modes (as in _modal editor_) allow us to do more with less keys. I also learned about [`<Leader>`](https://stackoverflow.com/a/1764336) and the [hyper key](https://xam.io/2020/hyper-key/).
-- I started to consciously think about which keys of my keyboard I actually use, why I use them and the ergonomics of it all. This also drove me down the rabbit hole of [tiling window managers](https://www.techrepublic.com/article/linux-101-whats-a-tiling-window-manager/).
-- I started to use the terminal more regularly and learned some things about bash.
-
-Vim made me reflect and improve on my workflows and changed how I think about operating computers.
 
 ## Caveats
 ### Touch typing is a prerequisite to some degree.
@@ -227,9 +230,6 @@ I switched mine with `Caps Lock` and it makes all the difference.
 </small>
 
 Try `:help quit` ☀️
-
-[^cantexit]: I'm referencing [this phenomenon](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/).  
-    Do a quick search on "exiting vim memes" to get an idea of the scope of the "problem".
 
 [^1]: To what extend a keyboard only workflow is desirable is a topic for another post.
 [^2]: And more. I'll omit those two words from now on, since that applies to basically everything in Vim.
